@@ -3,6 +3,10 @@
 <head>
 <title>Airbnb Website</title>
 
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Internal CSS -->
 <style>
 /* Black Background */
 body {
@@ -16,7 +20,26 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-/* Center Table */
+/* Container Style */
+.container {
+    width: 85%;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Images */
+.images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+/* Table Style for Dark Theme */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -25,48 +48,90 @@ table {
     color: white;
 }
 
-/* Table Header */
 th {
-    background-color: #ff5a5f;
+    background-color: #ff5a5f; /* Airbnb red */
     color: white;
     padding: 10px;
 }
 
-/* Table Cells */
 td {
     padding: 10px;
     border: 1px solid #444;
     text-align: center;
 }
 
-/* Alternate Rows */
 tr:nth-child(even) {
     background-color: #2a2a2a;
 }
 
-/* Hover Effect */
 tr:hover {
     background-color: #333;
+}
+
+/* Center text for paragraphs, lists, and tables */
+.center-text {
+    text-align: center;
 }
 </style>
 
 </head>
-
 <body>
 
+<!-- Container 1: Header -->
+<div class="container">
 <h1>Airbnb</h1>
 <h2>Book Unique Places to Stay</h2>
 <h3>Explore Homes Around the World</h3>
 <h4>Travel With Comfort and Style</h4>
+</div>
 
-<p><b>Airbnb connects millions of travelers with unique homes, apartments, and experiences around the world.</b></p>
+<!-- Container 2: Introduction -->
+<div class="container center-text">
+<p><b>Airbnb connects millions of travelers with unique homes, apartments, and experiences around the world, making travel affordable, comfortable, and memorable.</b></p>
 
+<!-- Inline CSS example -->
+<p style="color: #ff5a5f; font-size:18px;">
+Airbnb offers affordable stays in beautiful destinations worldwide for travelers.
+</p>
+<p><u>Guests enjoy comfort, safety, convenience, and unforgettable experiences every trip.</u></p>
+</div>
+
+<!-- Container 3: Images -->
+<div class="container images center-text">
 <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" width="300" height="200" alt="Airbnb house">
 <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" width="300" height="200" alt="Airbnb apartment">
 <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" width="300" height="200" alt="Airbnb room">
+</div>
 
-<br><br>
+<!-- Container 4: Video -->
+<div class="container center-text">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RuuOCp_LPwI" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+</div>
 
+<!-- Container 5: Lists & Formatting -->
+<div class="container center-text">
+<p>Area m<sup>2</sup>, x<sup>2</sup>, 10<sup>3</sup>, 5<sup>4</sup></p>
+<p>H<sub>2</sub>O, CO<sub>2</sub>, O<sub>2</sub>, CH<sub>4</sub></p>
+
+<p><del>Old prices</del><br><del>Outdated listings</del><br><del>Unavailable homes</del><br><del>Expired offers</del></p>
+
+<p><mark>Special discount</mark><br><mark>Top rated host</mark><br><mark>New listing</mark><br><mark>Limited offer</mark></p>
+
+<ul>
+    <li>Apartments</li>
+    <li>Villas</li>
+    <li>Cabins</li>
+</ul>
+
+<ol>
+    <li>Search location</li>
+    <li>Choose home</li>
+    <li>Book stay</li>
+</ol>
+</div>
+
+<!-- Container 6: Table -->
+<div class="container">
 <table border="1">
 <caption><b>Airbnb Listings Information</b></caption>
 <tr>
@@ -110,6 +175,12 @@ tr:hover {
     <td>Booked</td>
 </tr>
 </table>
+</div>
+
+<!-- Footer -->
+<div class="container footer">
+<p style="font-weight:bold;">© 2026 Airbnb Project. Designed by Jean Luck.</p>
+</div>
 
 </body>
 </html>
