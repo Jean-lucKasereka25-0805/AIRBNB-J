@@ -8,26 +8,22 @@
 
 <!-- Internal CSS -->
 <style>
+
 /* Black Background */
 body {
     background-color: black;
     color: white;
-    font-family: Arial, sans-serif;
 }
 
 /* Center Headings */
 h1, h2, h3, h4 {
     text-align: center;
+    color: #ff5a5f;
 }
 
-/* Container Style */
-.container {
-    width: 85%;
-    margin: 25px auto;
-    padding: 20px;
-    background-color: #1c1c1c;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+/* Center Paragraphs & Lists */
+p, ul, ol {
+    text-align: center;
 }
 
 /* Images */
@@ -36,26 +32,25 @@ h1, h2, h3, h4 {
     height: 200px;
     object-fit: cover;
     margin: 10px;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 
-/* Table Style for Dark Theme */
+/* Dark Table */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
     background-color: #1c1c1c;
     color: white;
+    margin-top: 20px;
 }
 
 th {
-    background-color: #ff5a5f; /* Airbnb red */
-    color: white;
+    background-color: #ff5a5f;
     padding: 10px;
 }
 
 td {
-    padding: 10px;
+    padding: 8px;
     border: 1px solid #444;
     text-align: center;
 }
@@ -68,16 +63,12 @@ tr:hover {
     background-color: #333;
 }
 
-/* Center text for paragraphs, lists, and tables */
-.center-text {
-    text-align: center;
-}
 </style>
-
 </head>
+
 <body>
 
-<!-- Container 1: Header -->
+<!-- Container 1 -->
 <div class="container">
 <h1>Airbnb</h1>
 <h2>Book Unique Places to Stay</h2>
@@ -85,94 +76,113 @@ tr:hover {
 <h4>Travel With Comfort and Style</h4>
 </div>
 
-<!-- Container 2: Introduction -->
-<div class="container center-text">
-<p><b>Airbnb connects millions of travelers with unique homes, apartments, and experiences around the world, making travel affordable, comfortable, and memorable.</b></p>
+<!-- Container 2 -->
+<div class="container">
+<p><b>Airbnb connects millions of travelers with unique homes, apartments, and experiences around the world, making travel affordable and memorable.</b></p>
 
-<!-- Inline CSS example -->
-<p style="color: #ff5a5f; font-size:18px;">
+<!-- Inline CSS Example -->
+<p style="color: #00ffff; font-size:18px;">
 Airbnb offers affordable stays in beautiful destinations worldwide for travelers.
 </p>
-<p><u>Guests enjoy comfort, safety, convenience, and unforgettable experiences every trip.</u></p>
+
+<p>
+<u>Guests enjoy comfort, safety, convenience, and unforgettable experiences every trip.</u>
+</p>
 </div>
 
-<!-- Container 3: Images -->
-<div class="container images center-text">
+<!-- Container 3 -->
+<div class="container images" style="text-align:center;">
 <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" width="300" height="200" alt="Airbnb house">
 <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" width="300" height="200" alt="Airbnb apartment">
 <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" width="300" height="200" alt="Airbnb room">
 </div>
 
-<!-- Container 4: Video -->
-<div class="container center-text">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RuuOCp_LPwI" frameborder="0" allowfullscreen style="border-radius:12px;"></iframe>
+<!-- Container 4 -->
+<div class="container" style="text-align:center;">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/RuuOCp_LPwI"
+allowfullscreen
+style="border-radius:12px;">
+</iframe>
 </div>
 
-<!-- Container 5: Lists & Formatting -->
-<div class="container center-text">
+<!-- Container 5 -->
+<div class="container">
+
 <p>Area m<sup>2</sup>, x<sup>2</sup>, 10<sup>3</sup>, 5<sup>4</sup></p>
 <p>H<sub>2</sub>O, CO<sub>2</sub>, O<sub>2</sub>, CH<sub>4</sub></p>
 
-<p><del>Old prices</del><br><del>Outdated listings</del><br><del>Unavailable homes</del><br><del>Expired offers</del></p>
+<p>
+<del>Old prices</del><br>
+<del>Outdated listings</del><br>
+<del>Unavailable homes</del><br>
+<del>Expired offers</del>
+</p>
 
-<p><mark>Special discount</mark><br><mark>Top rated host</mark><br><mark>New listing</mark><br><mark>Limited offer</mark></p>
+<p>
+<mark>Special discount</mark><br>
+<mark>Top rated host</mark><br>
+<mark>New listing</mark><br>
+<mark>Limited offer</mark>
+</p>
 
 <ul>
-    <li>Apartments</li>
-    <li>Villas</li>
-    <li>Cabins</li>
+<li>Apartments</li>
+<li>Villas</li>
+<li>Cabins</li>
 </ul>
 
 <ol>
-    <li>Search location</li>
-    <li>Choose home</li>
-    <li>Book stay</li>
+<li>Search location</li>
+<li>Choose home</li>
+<li>Book stay</li>
 </ol>
+
 </div>
 
-<!-- Container 6: Table -->
+<!-- Container 6 -->
 <div class="container">
 <table border="1">
 <caption><b>Airbnb Listings Information</b></caption>
 <tr>
-    <th>City</th>
-    <th>Host</th>
-    <th>Price</th>
-    <th>Rating</th>
-    <th>Type</th>
-    <th>Guests</th>
-    <th>Nights</th>
-    <th>Status</th>
+<th>City</th>
+<th>Host</th>
+<th>Price</th>
+<th>Rating</th>
+<th>Type</th>
+<th>Guests</th>
+<th>Nights</th>
+<th>Status</th>
 </tr>
 <tr>
-    <td>Paris</td>
-    <td>Marie</td>
-    <td>$120</td>
-    <td>4.8</td>
-    <td>Villa</td>
-    <td>4</td>
-    <td>5</td>
-    <td>Booked</td>
+<td>Paris</td>
+<td>Marie</td>
+<td>$120</td>
+<td>4.8</td>
+<td>Villa</td>
+<td>4</td>
+<td>5</td>
+<td>Booked</td>
 </tr>
 <tr>
-    <td>London</td>
-    <td>James</td>
-    <td>$90</td>
-    <td>4.2</td>
-    <td>House</td>
-    <td>3</td>
-    <td>2</td>
-    <td>Available</td>
+<td>London</td>
+<td>James</td>
+<td>$90</td>
+<td>4.2</td>
+<td>House</td>
+<td>3</td>
+<td>2</td>
+<td>Available</td>
 </tr>
 <tr>
-    <td>Tokyo</td>
-    <td>Ken</td>
-    <td>$110</td>
-    <td>4.7</td>
-    <td>Apartment</td>
-    <td>2</td>
-    <td>4</td>
-    <td>Booked</td>
+<td>Tokyo</td>
+<td>Ken</td>
+<td>$110</td>
+<td>4.7</td>
+<td>Apartment</td>
+<td>2</td>
+<td>4</td>
+<td>Booked</td>
 </tr>
 </table>
 </div>
