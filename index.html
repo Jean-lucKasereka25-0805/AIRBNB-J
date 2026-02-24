@@ -3,179 +3,113 @@
 <head>
 <title>Airbnb Website</title>
 
-<!-- External CSS -->
-<link rel="stylesheet" href="style.css">
-
-<!-- Internal CSS -->
 <style>
-    h1, h2, h3, h4 {
-        text-align: center;
-        color: #ff5a5f;
-    }
+/* Black Background */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
 
-    p {
-        text-align: center;
-        line-height: 1.6;
-    }
+/* Center Headings */
+h1, h2, h3, h4 {
+    text-align: center;
+}
 
-    ul, ol {
-        text-align: center;
-        list-style-position: inside;
-    }
+/* Center Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1c1c1c;
+    color: white;
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-        text-align: center;
-    }
+/* Table Header */
+th {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 10px;
+}
 
-    th {
-        background-color: #ff5a5f;
-        color: black;
-        padding: 10px;
-    }
+/* Table Cells */
+td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: center;
+}
 
-    td {
-        padding: 8px;
-    }
+/* Alternate Rows */
+tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
 
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    iframe {
-        border-radius: 12px;
-    }
+/* Hover Effect */
+tr:hover {
+    background-color: #333;
+}
 </style>
+
 </head>
 
 <body>
 
-<!-- Container 1: Header Section -->
-<div class="container">
-    <h1>Airbnb</h1>
-    <h2>Book Unique Places to Stay</h2>
-    <h3>Explore Homes Around the World</h3>
-    <h4>Travel With Comfort and Style</h4>
-</div>
+<h1>Airbnb</h1>
+<h2>Book Unique Places to Stay</h2>
+<h3>Explore Homes Around the World</h3>
+<h4>Travel With Comfort and Style</h4>
 
-<!-- Container 2: Introduction -->
-<div class="container">
-    <p><b>Airbnb connects millions of travelers with unique homes, apartments, and experiences around the world.</b></p>
+<p><b>Airbnb connects millions of travelers with unique homes, apartments, and experiences around the world.</b></p>
 
-    <!-- Inline CSS Example -->
-    <p style="color: blue; font-size:18px;">
-        Airbnb offers affordable stays in beautiful destinations worldwide for travelers.
-    </p>
+<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" width="300" height="200" alt="Airbnb house">
+<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" width="300" height="200" alt="Airbnb apartment">
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" width="300" height="200" alt="Airbnb room">
 
-    <p>
-        <u>Guests enjoy comfort, safety, convenience, and unforgettable experiences every trip.</u>
-    </p>
-</div>
+<br><br>
 
-<!-- Container 3: Images -->
-<div class="container images" style="text-align:center;">
-   <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" 
-     width="300" height="200" 
-     alt="Airbnb house">
-
-<img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" 
-     width="300" height="200" 
-     alt="Airbnb apartment">
-
-<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" 
-     width="300" height="200" 
-     alt="Airbnb room">
-</div>
-
-<!-- Container 4: Video -->
-<div class="container" style="text-align:center;">
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/RuuOCp_LPwI"
-        allowfullscreen>
-    </iframe>
-</div>
-
-<!-- Container 5: Formatting Examples -->
-<div class="container">
-    <p>Area m<sup>2</sup>, x<sup>2</sup>, 10<sup>3</sup>, 5<sup>4</sup></p>
-    <p>H<sub>2</sub>O, CO<sub>2</sub>, O<sub>2</sub>, CH<sub>4</sub></p>
-
-    <p>
-        <del>Old prices</del><br>
-        <del>Outdated listings</del><br>
-        <del>Unavailable homes</del><br>
-        <del>Expired offers</del>
-    </p>
-
-    <p>
-        <mark>Special discount</mark><br>
-        <mark>Top rated host</mark><br>
-        <mark>New listing</mark><br>
-        <mark>Limited offer</mark>
-    </p>
-</div>
-
-<!-- Container 6: Lists -->
-<div class="container">
-    <ul>
-        <li>Apartments</li>
-        <li>Villas</li>
-        <li>Cabins</li>
-    </ul>
-
-    <ol>
-        <li>Search location</li>
-        <li>Choose home</li>
-        <li>Book stay</li>
-    </ol>
-</div>
-
-<!-- Container 7: Table -->
-<div class="container">
-    <table border="1">
-        <caption><b>Airbnb Listings Information</b></caption>
-        <tr>
-            <th>City</th>
-            <th>Host</th>
-            <th>Price</th>
-            <th>Rating</th>
-            <th>Type</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Paris</td>
-            <td>Marie</td>
-            <td>$120</td>
-            <td>4.8</td>
-            <td>Villa</td>
-            <td>Booked</td>
-        </tr>
-        <tr>
-            <td>London</td>
-            <td>James</td>
-            <td>$90</td>
-            <td>4.2</td>
-            <td>House</td>
-            <td>Available</td>
-        </tr>
-        <tr>
-            <td>Tokyo</td>
-            <td>Ken</td>
-            <td>$110</td>
-            <td>4.7</td>
-            <td>Apartment</td>
-            <td>Booked</td>
-        </tr>
-    </table>
-</div>
-
-<!-- Container 8: Footer -->
-<div class="footer">
-    <!-- Inline CSS Example -->
-    <p style="font-weight:bold;">© 2026 Airbnb Project. Designed by Jean Luck.</p>
-</div>
+<table border="1">
+<caption><b>Airbnb Listings Information</b></caption>
+<tr>
+    <th>City</th>
+    <th>Host</th>
+    <th>Price</th>
+    <th>Rating</th>
+    <th>Type</th>
+    <th>Guests</th>
+    <th>Nights</th>
+    <th>Status</th>
+</tr>
+<tr>
+    <td>Paris</td>
+    <td>Marie</td>
+    <td>$120</td>
+    <td>4.8</td>
+    <td>Villa</td>
+    <td>4</td>
+    <td>5</td>
+    <td>Booked</td>
+</tr>
+<tr>
+    <td>London</td>
+    <td>James</td>
+    <td>$90</td>
+    <td>4.2</td>
+    <td>House</td>
+    <td>3</td>
+    <td>2</td>
+    <td>Available</td>
+</tr>
+<tr>
+    <td>Tokyo</td>
+    <td>Ken</td>
+    <td>$110</td>
+    <td>4.7</td>
+    <td>Apartment</td>
+    <td>2</td>
+    <td>4</td>
+    <td>Booked</td>
+</tr>
+</table>
 
 </body>
 </html>
